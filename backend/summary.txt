@@ -1,0 +1,27 @@
+Wednesday and join in particular actually want to become professors of their their graduate so for this course we're going to give them an option of actually.
+And you know if we're going to talk about any particular paper is or any cool code, you know we're going to pose it online.
+um, what do you need to know to kind of succeed in this class right, so I really recommend you know this for.
+um you know if you know machine learning or neural nets in particular that supplies we're not going to assume you know that.
+What our assignments So these are you know it's gonna be a mix of short theoretical questions, but mainly programming exercises are going to allow you understand the course
+Okay, you will be given roughly this assignments, are going to be given roughly every two weeks with maybe like.
+Maybe two weeks after the class is over and you're going to present to me, and maybe a ta is going to be in the call
+i'm that lane right lateness show we're going to be, you know relatively nice here so everyone is going to be given three free late days.
+I think everyone should know for computer vision, since we don't assume that you guys know machine learning, we cannot really talk about very deep.
+Okay, so we're gonna try to address a couple of different questions you know what is computer vision, how do we even define it.
+Okay, so the kind of the basic definition of what we're trying to accomplish here is, you know, we want to develop automatic algorithms right that would see.
+A trailer went right to see right right understand what the world is like from those images or videos from that capture data you're receiving okay
+now you know we're going to try to define a little bit better what it means to see.
+that, if we want to have a robot that's going to eventually go around in our House and clean and maybe you know do other things like.
+You know, serve your coffee or coke or something like that right
+Okay, so the goal is going to be, we have cameras on this guy over here is going to move around, is going to capture.
+Here it does exactly what kind of shape it has right because i'm going to place my hand correctly on that shape.
+You know, so we also need to infer this kind of properties from from images or maybe a sequence of images okay
+Likewise, I need to understand that the SOFA is actually flat because maybe you want to sit on it right
+Maybe it's less important about exact material properties, but important their shape right, for example, is not just important to know that there is a car what
+And some people pitch that, as you can answer any question about image right, what does this mean if you have images, you know people asked.
+Okay, so imagine if you need to design an algorithm is going to answer these questions right, you can imagine that this is actually really hard.
+To control, you know tracks to control cars that's trillions of dollars right, so you have so many competitive companies right now trying to get to that point.
+and we're going to do that, for one of the assignments in class you guys are going to be pasting some texts like this onto images.
+And it's going to produce a face and it's going to look like it's a real face.
+With language or we just modifying you know I can draw different iowa here is going to produce a nice image so it's a really powerful technology.
+But maybe even better right maybe you want to write a sentence and you want to retrieve relevant image right.
