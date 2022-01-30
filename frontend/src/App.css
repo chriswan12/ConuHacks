@@ -20,6 +20,11 @@
 }
 
 .title{
-    margin: 10px; 
+    margin: 20px; 
     font-size: 7.5rem;
+    font-family: sans-serif; 
+}
+
+.input { 
+    border-style: none;
 }
