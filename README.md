@@ -1,4 +1,6 @@
-# ConuHacks
+# ConUHacks
+## Demo Link
+https://youtu.be/bwntG4rMNRE
 
 ## Inspiration
 Upon returning to online school from our internships, we realized that waking up for 9 a.m courses were very difficult and that often it was difficult to retain all the material discussed during lectures. As a result students often need to take time to re-watch lectures which is a chore. We wanted to remove and reduce the need to do this.
