@@ -72,4 +72,3 @@ if __name__ == "__main__":
         word = GenerateMSWord(text,
                               "Test Summary of Part of the Lecture").generate_docx(
             'rekiyo4126@peykesabz.com')
-
