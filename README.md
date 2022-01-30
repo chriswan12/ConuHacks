@@ -21,4 +21,6 @@ We are quite proud to make this project as a team of two, it was a relatively la
 Things we learned include REST design frameworks, methods for performing text analysis, overall getting a good sense of workflow and some experience designing software and working as a team. 
 
 ## What's next for NoteIt
-If possible we would very much like to improve the NLP accuracy of NoteIt so that results can be more accurate and consistent. NoteIt can also use a better UI given more time!```
+If possible we would very much like to improve the NLP accuracy of NoteIt so that results can be more accurate and consistent. NoteIt can also use a better UI given more time!
+
+Created by [@Chris Wan](https://github.com/chriswan12) and [@Derek Wang](https://github.com/Derek-Y-Wang)
