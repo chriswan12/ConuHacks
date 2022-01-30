@@ -2,7 +2,6 @@ import os
 from NLPSummaryGenerator import SummaryGenerator
 import requests
 import json
-from pathlib import Path
 
 
 def main():
@@ -11,7 +10,7 @@ def main():
     if len(os.listdir(cwd + '/NoteIt/media')) != 0:
         response = requests.get('http://127.0.0.1:8000/api/get')
         file_name = response.json()[-1]['file_upload'].split('/')[-1]
-        s = SummaryGenerator(file_name, 'Sanja Fidler')
+        s = SummaryGenerator(file_name)
         r = s.generate_spacy_results()
         n = s.generate_nltk_results()
         print(r)
