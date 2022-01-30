@@ -1,0 +1,30 @@
+* { 
+    padding: 0;
+    margin: 0; 
+}
+
+
+.App { 
+    height: 100vh;
+    width: 100%; 
+    flex: 0.8;
+    background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+    height: 100vh;
+    color: white;
+    overflow-y: overlay;
+    text-align: center; 
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    margin: 20px; 
+    font-size: 7.5rem;
+    font-family: sans-serif; 
+}
+
+.input { 
+    border-style: none;
+}

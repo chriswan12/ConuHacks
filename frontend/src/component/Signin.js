@@ -1,5 +1,6 @@
 import firebase from 'firebase/compat/app';
 import fire from '../firebase';
+import { Button } from '@material-ui/core';
 
 function SignIn() {
     
@@ -10,7 +11,7 @@ function SignIn() {
   }
 
   return (
-    <button onClick={signInWithGoogle}>Sign in with Google</button>
+    <Button variant="outlined" style={{padding: "10px", margin: "10px", size: "medium"}} color="primary" onClick={signInWithGoogle}>Sign in with Google</Button>
   )
 }
 
