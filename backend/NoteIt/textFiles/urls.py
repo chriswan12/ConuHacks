@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import textFilesView
+from .views import textFilesView, textFilesPut
 
 
 urlpatterns = [
-    path('api/create', textFilesView.as_view())
+    path('api/create', textFilesPut.as_view()),
+    path('api/get', textFilesView.as_view())
 ]

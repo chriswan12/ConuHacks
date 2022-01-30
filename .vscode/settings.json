@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./backend/NoteIt/NoteIt",
+        "./backend/NoteIt"
+    ]
+}
