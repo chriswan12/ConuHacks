@@ -3,13 +3,14 @@ from django.db import models
 
 
 def upload_path(instace, filename):
-    print(filename)
     return '/'.join([filename])
 
 
 class TextFiles(models.Model):
     file_upload = models.FileField(
         upload_to=upload_path, null=True, blank=True)
+
+    useremail = models.EmailField(max_length=254, default='')
 
     def __str__(self) -> str:
         return str(self.file_upload)

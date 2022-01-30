@@ -16,8 +16,11 @@ class textFilesPut(CreateAPIView):
 
     def post(self, request, *args, **kwargs):
         try:
-            file_upload = request.data['file_upload']
-            TextFiles.objects.create(file_upload=file_upload)
+            print(request.data.dict())
+            file_upload = request.data['inputtedFile']
+            print("hERE")
+            email = request.data['useremail']
+            TextFiles.objects.create(file_upload=file_upload, useremail=email)
             return HttpResponse({'message': 'text-file uploaded'}, status=200)
         except:
             return HttpResponse({'message': 'text-file failed'}, status=400)
