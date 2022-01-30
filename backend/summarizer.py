@@ -2,16 +2,15 @@ from heapq import nlargest
 from string import punctuation
 from spacy.lang.en.stop_words import STOP_WORDS
 import spacy
-import nltk
 
 
-class Summarizer:
+class SpaCySummarizer:
     def __init__(self, text):
         self.text = text
         self.punctuation = punctuation + '\n'
 
     def summarize(self):
-        stopwords = list(STOP_WORDS)
+        stopwords = list(STOP_WORDS) + ['um']
         nlp = spacy.load('en_core_web_sm')
 
         doc = nlp(self.text)
@@ -43,7 +42,7 @@ class Summarizer:
         for sent in sentence_tokens:
             for word in sent:
                 if word.text.lower() in word_frequencies.keys():
-                    if len(sent.text.split(' ')) < 30:
+                    if len(sent.text.split(' ')) < 50:
                         if sent not in sentence_scores.keys():
                             sentence_scores[sent] = word_frequencies[
                                 word.text.lower()]
@@ -70,6 +69,7 @@ class Summarizer:
         # final_summary = [word.text for word in summary]
         # summary = ' '.join(final_summary)
         self.export(summary, 'summary.txt')
+        return summary
 
     @staticmethod
     def export(summary, filename):
@@ -82,7 +82,7 @@ if __name__ == '__main__':
     with open('formatted.txt', 'r') as f:
         text = f.readline()
 
-        s = Summarizer(text)
+        s = SpaCySummarizer(text)
         s.summarize()
 
 
