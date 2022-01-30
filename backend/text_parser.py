@@ -1,10 +1,8 @@
 
-from fileinput import filename
-
-
 class Parser:
-    def __init__(self, file_path):
+    def __init__(self, file_path, speaker=None):
         self.file_path = file_path
+        self.speaker = speaker
 
     def parse(self):
         lines = []
@@ -15,30 +13,34 @@ class Parser:
             while line:
                 line = f.readline()
                 # Have to change the lecture name
-                if line == '\n' or not line or not line.startswith('Sanja Fidler: '):
-                    continue
 
+                # for zoom meetings with speaker
+                if self.speaker:
+                    if line == '\n' or not line or not line.startswith(self.speaker + ': '):
+                        continue
+                elif not self.speaker:
+                    if line == '\n' or not line:
+                        continue
                 formatted_line = self._strip_user(line.rstrip('\n'))
 
                 lines.append(formatted_line)
-        return lines
+        return " ".join(lines)
 
     @staticmethod
     def _strip_user(text):
         for i in range(len(text)):
             if text[i] == ':':
                 return text[i+2:]
+        return text
 
     @staticmethod
-    def export(lines, filename):
+    def export(text, filename):
         with open(filename, 'w') as f:
-            f.write(" ".join(lines))
+            f.write(text)
 
 
 if __name__ == "__main__":
     print("Parse")
-    parser = Parser('test.txt')
+    parser = Parser('test.txt', 'Sanja Fidler')
     parser.export(parser.parse(), 'formatted.txt')
-    # print(parser.parse())
 
-    # print(" ".join(parser.parse()))
